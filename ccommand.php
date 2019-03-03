@@ -52,8 +52,8 @@ if($forward!=""){
 } else if($neutral!=""){
   echo "neutral \n"; ?><br><?php
   echo shell_exec ("sudo ./bins/ccontrol.exe neutral");
-} else if($fly_test!=""){
-  echo "fly_test with $fly_test \n"; ?><br><?php
+} else if($fly_test_speed!="" && $fly_test_time!=""){
+  echo "fly_test with $fly_test_speed and $fly_test_time \n"; ?><br><?php
   echo shell_exec ("sudo ./bins/ccontrol.exe fly_test $fly_test_speed $fly_test_time");
 }
 ?>
