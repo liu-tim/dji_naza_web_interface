@@ -168,10 +168,12 @@
 										<div class="card-header">Fly Test</div>
 										<div class="card-body">
 										  <div class="form-group">
-											<label>Throttle Value</label>
-											<input id="fly_test_val" style="width: 50%;" type="text" class="form-control">
+											<label>Fly test speed</label>
+											<input id="fly_test_speed" style="width: 50%;" type="text" class="form-control">
+											<label>Fly test time</label>
+											<input id="fly_test_time" style="width: 50%;" type="text" class="form-control">
 										  </div>
-										  <button onclick="perform_action('fly_test', $('#fly_test_val').val())" type="button" class="btn btn-outline-primary">Set</button>
+										  <button onclick="fly_test($('#fly_test_speed').val(), $('#fly_test_time').val())" type="button" class="btn btn-outline-primary">Set</button>
 										</div>
 									</div>
 								</div>
