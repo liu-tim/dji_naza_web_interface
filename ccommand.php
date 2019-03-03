@@ -19,7 +19,8 @@ $tleft = $_GET["tleft"];
 $flm = $_GET["flm"];
 $arm = $_GET["arm"];
 $neutral = $_GET["neutral"];
-$fly_test = $_GET["fly_test"];
+$fly_test_speed = $_GET["fly_test_speed"];
+$fly_test_time = $_GET["fly_test_time"];
 
 if($forward!=""){
   echo "forward with $forward \n"; ?><br><?php
@@ -53,6 +54,6 @@ if($forward!=""){
   echo shell_exec ("sudo ./bins/ccontrol.exe neutral");
 } else if($fly_test!=""){
   echo "fly_test with $fly_test \n"; ?><br><?php
-  echo shell_exec ("sudo ./bins/ccontrol.exe fly_test $fly_test");
+  echo shell_exec ("sudo ./bins/ccontrol.exe fly_test $fly_test_speed $fly_test_time");
 }
 ?>
