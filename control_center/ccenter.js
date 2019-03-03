@@ -17,7 +17,7 @@ function perform_action(action, val) {
 }
 
 function fly_test(fly_test_speed, fly_test_time) {
-  $.ajax("../ccommand.php?fly_test_speed="+fly_test_speed+"?"+"fly_test_time"+fly_test_time, {
+  $.ajax("../ccommand.php?fly_test_speed="+fly_test_speed+"?"+"fly_test_time="+fly_test_time, {
         success: function(data) {
           log_text(data);
         },
