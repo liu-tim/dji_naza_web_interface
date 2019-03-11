@@ -179,6 +179,20 @@
 								</div>
 								<div class="col-md-4">
 									<div class="card">
+										<div class="card-header">Move Gimbal</div>
+										<div class="card-body">
+										  <div class="form-group">
+											<label>Move Gimbal Value</label>
+											<input id="move_gimbal_value" style="width: 50%;" type="text" class="form-control">
+											<label>Move Gimbal Time</label>
+											<input id="move_gimbal_time" style="width: 50%;" type="text" class="form-control">
+										  </div>
+										  <button onclick="move_gimbal($('#move_gimbal_value').val(), $('#move_gimbal_time').val())" type="button" class="btn btn-outline-primary">Set</button>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="card">
 										<div class="card-header">Channel U</div>
 										<div class="card-body">
 

@@ -21,6 +21,8 @@ $arm = $_GET["arm"];
 $neutral = $_GET["neutral"];
 $fly_test_speed = $_GET["fly_test_speed"];
 $fly_test_time = $_GET["fly_test_time"];
+$move_gimbal_value = $_GET["move_gimbal_value"];
+$move_gimbal_time = $_GET["move_gimbal_time"];
 
 if($forward!=""){
   echo "forward with $forward \n"; ?><br><?php
@@ -55,5 +57,8 @@ if($forward!=""){
 } else if($fly_test_speed!="" && $fly_test_time!=""){
   echo "fly_test with $fly_test_speed and $fly_test_time \n"; ?><br><?php
   echo shell_exec ("sudo ./bins/ccontrol.exe fly_test $fly_test_speed $fly_test_time");
+} else if($move_gimbal_value!="" && $move_gimbal_time!=""){
+  echo "move_gimbal with $move_gimbal_value and $move_gimbal_time \n"; ?><br><?php
+  echo shell_exec ("sudo ./bins/ccontrol.exe move_gimbal $move_gimbal_value $move_gimbal_time");
 }
 ?>
