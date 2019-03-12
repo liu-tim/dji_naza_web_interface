@@ -27,7 +27,7 @@ function fly_test(fly_test_speed, fly_test_time) {
    });
 }
 
-function move_gimbal(move_gimbal_time, move_gimbal_value) {
+function move_gimbal(move_gimbal_value, move_gimbal_time) {
   $.ajax("../ccommand.php?move_gimbal_value="+move_gimbal_value+"&"+"move_gimbal_time="+move_gimbal_time, {
         success: function(data) {
           log_text(data);
